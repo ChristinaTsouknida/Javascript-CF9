@@ -44,5 +44,5 @@ for (const char of str1) {
 
 console.log(str1.substring(1, 4));
 
-console.log(str1.slice(1, 4));
-console.log(str1.slice(-3));
+console.log(str1.slice(1, 4)); //"ell"
+console.log(str1.slice(-3));  //"llo"
