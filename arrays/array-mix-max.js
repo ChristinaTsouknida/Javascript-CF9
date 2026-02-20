@@ -1,8 +1,8 @@
 const arr = [10, 2, 9, 6, 5];
 
-function getMin(array) {
+function getMin(arr) {
    let minVal = Math.min(...arr);
-   let minPosition = arr.indexOf
+   let minPosition = arr.indexOf(minVal)
    return { minVal, minPosition };
 }
 
@@ -17,4 +17,6 @@ function getMinClassic(arr) {
    }
    return { minVal, minPosition };   
 }
- 
+
+
+ console.log(getMin(arr));
