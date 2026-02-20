@@ -13,3 +13,14 @@ const getIndexes = (array, value) => {
 
 console.log(getIndexes(arr, 3));
 
+//do it with reduce
+
+const getIndexesWithReduce = (array, value) => {
+   return arr.reduce((indexes, element, index) => (element === value) ? [...
+      indexes, index] : indexes, []);
+   
+      
+}
+
+console.log(getIndexesWithReduce(arr, 3));
+
