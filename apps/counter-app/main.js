@@ -28,17 +28,19 @@ function onIncreaseClicked() {
 }
 
 //Model
-
 function decreaseCounter() {
     counter--;
+    render()
 }
 
 function resetCounter() {
-    counter == DEFAULT;
+    counter = DEFAULT;
+    render()
 }
 
 function increaseCounter() {
     counter++;
+    render()
 }
 
 // View
@@ -50,5 +52,5 @@ function render() {
 
 function styleCounter(counterEl) {
     counterEl.classList.remove('color-green', 'color-red', 'color-black')
-    counterEl.add(counter > 0 ? 'color-green' : counter < 0 ? 'color-red' : 'color-black')
+    counterEl.classList.add(counter > 0 ? 'color-green' : counter < 0 ? 'color-red' : 'color-black')
 }
